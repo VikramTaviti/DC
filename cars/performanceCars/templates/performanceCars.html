@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Showcase</title>
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+  <div class="container">
+    {%for car in performanceCars%}
+    <div class="car-card">
+      <img src="car-image-1.jpg" alt="Car 1" class="car-image">
+      <div class="car-details">
+        <h3 class="car-modelName">{{car.modelName}}</h3>
+        <p class="car-info"><strong>Brand:</strong> {{car.brand}}</p>
+        <p class="car-info"><strong>Engine:</strong> {{car.engine}}</p>
+        <p class="car-info"><strong>HorsePower:</strong> {{car.horsepower}}</p>
+        <p class="car-info"><strong>Torque:</strong> {{car.torque}}</p>
+        <p class="car-info"><strong>Acceleration:</strong> {{car.acceleration}}</p>
+      </div>
+
+    </div>
+    {%endfor%}
+  </div>
+</body>
+</html>
