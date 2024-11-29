@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Showcase</title>
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+  <div class="container">
+    <div class="car-card">
+      <img src="car-image-1.jpg" alt="Car 1" class="car-image">
+      <div class="car-details">
+        <h3 class="car-title">Car Name 1</h3>
+        <p class="car-info"><strong>Brand:</strong> Brand Name</p>
+        <p class="car-info"><strong>Model:</strong> Model Year</p>
+        <p class="car-info"><strong>Fuel Type:</strong> Petrol/Diesel/Electric</p>
+        <p class="car-info"><strong>Mileage:</strong> 20 km/l</p>
+        <p class="car-price">Price: $20,000</p>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="car-image-2.jpg" alt="Car 2" class="car-image">
+      <div class="car-details">
+        <h3 class="car-title">Car Name 2</h3>
+        <p class="car-info"><strong>Brand:</strong> Brand Name</p>
+        <p class="car-info"><strong>Model:</strong> Model Year</p>
+        <p class="car-info"><strong>Fuel Type:</strong> Petrol/Diesel/Electric</p>
+        <p class="car-info"><strong>Mileage:</strong> 25 km/l</p>
+        <p class="car-price">Price: $25,000</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
